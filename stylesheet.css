@@ -1,0 +1,120 @@
+.menuText{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 21px;
+    letter-spacing: .10em;
+}
+
+.homepagePhoto {
+    margin-left: 120px;
+    margin-top: 50px;
+    width: 500px;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  { left:200px; top:0px;}
+  
+  }
+
+  .horizontalLine1 {
+
+    border: 1px solid white;
+    margin-left: 120px;
+    margin-right: 960px; 
+    margin-top: 90px;
+  }
+
+  .horizontalLine2 {
+
+    border: 1px solid white;
+    margin-left: 90px;
+    margin-right: 90px; 
+    margin-top: 90px;
+  }
+
+/*TEXT ANIMATION */
+
+/* GLOBAL STYLES */
+body {
+    background: #333;
+    display: block;
+    justify-content: center;
+
+  }
+
+  .typewriter{
+    margin-left: 120px;
+    margin-right: 100px;
+    margin-top: 80px;
+  }
+
+  #introduction{
+    font-size: 30px;
+    font-family: 'DM Serif Display', serif;
+  }
+  #aboutMe{
+    margin-left: 120px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+    letter-spacing: .15em;
+    font-family: 'DM Serif Display', serif;
+  }
+  
+  /* DEMO-SPECIFIC STYLES */
+  .typewriter h1 {
+ 
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid pink; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: pink }
+  }
+
+  /*TEXT ANIMATION END*/
+
+  /*RESUME BUTTON*/
+
+  #buttons{
+  margin-left: 120px; 
+  font-size: 20px;
+  color: black;
+  display: block;
+  max-width: 50%;
+
+}
+.downloadablePDF{
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.left{
+  text-align: left;
+}
+.right{
+  text-align: right;
+}

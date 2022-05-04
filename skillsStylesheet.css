@@ -1,0 +1,98 @@
+#firstImage {
+    border-radius: 50%;
+}
+#restImages {
+    border-radius: 50%;
+}
+
+.skillsBox{
+    margin-left: 120px; 
+    margin-right: 120px;  
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+}
+.row1 {
+    margin-left: 120px; 
+    margin-right: 120px;  
+    display: flex;
+  }
+.row2 {
+    margin-left: 290px; 
+    margin-right: 5px;  
+    padding-top: 20px;
+    display: flex;
+  }
+  .template{
+    margin-left: auto; 
+    margin-right: auto;  
+    padding-left: 30px;
+  }
+
+  #text1{
+    size: 100px;
+    padding-right: 645px;
+    padding-left: 500px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+#video {
+  display: block;
+  margin-left: auto; /*moves img to center*/
+  margin-right: auto;  /*moves img to center*/
+  padding-left: 30px;
+  width: 50%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+
+#previewImage1{
+  display: flex;
+  margin-left: auto; 
+  margin-right: auto;  
+  padding-left: 30px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+
+  max-width: 50%;
+
+}
+#intro1{
+    padding-left: 0%;
+    font-family: 'Comfortaa', cursive;
+    font-size: 25px;
+    padding-right: 200px;
+    padding-left: 200px;
+    
+     text-align: left;
+}
+#intro{
+    padding-left: 0%;
+    font-family: 'Comfortaa', cursive;
+    font-size: 25px;
+    padding-right: 200px;
+    padding-left: 200px;
+    
+  text-align: left;
+}
+#lastIntro{
+    padding-left: 0%;
+    font-family: 'Comfortaa', cursive;
+    font-size: 25px;
+    padding-right: 200px;
+    padding-left: 200px;
+    
+  text-align: center;
+}
+#icon{
+  border-radius: 50%;
+}
