@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <link rel="stylesheet" href="stylesheet.css">
@@ -39,8 +40,8 @@
   <div class="w3-bar w3-black" >
     <a id="menuTab" style="width:20%" a href="index.html"class="menuText w3-bar-item w3-btn">About</a>
     <a id="menuTab" style="width:20%" a href="projects.html"class="menuText w3-bar-item w3-btn">Projects</a>
-    <a id="menuTab" style="width:20%" a href="judgesPage.html" class="menuText w3-bar-item w3-btn">Art</a>
-    <a id="menuTab" style="width:20%" a href="#contactStuff"class="menuText w3-bar-item w3-btn">Resume</a>
+    <a id="menuTab" style="width:20%" a href="art.html" class="menuText w3-bar-item w3-btn">Art</a>
+    <a id="menuTab" style="width:20%" a href="#resume"class="menuText w3-bar-item w3-btn">Resume</a>
     <a id="menuTab" style="width:20%" a href="#contactStuff"class="menuText w3-bar-item w3-btn">Contact</a>
   </div>
 
@@ -84,8 +85,8 @@
   
     </div>
     <hr class="horizontalLine1" style="margin-top: 50px;">
-    <h3 class="left skillsBox w3-padding-16 w3-text-light-grey">Resume:</h3> 
-    <a  id = "buttons" href="resumePDF.pdf" download>
+    <h3 id ="resume"class="left skillsBox w3-padding-16 w3-text-light-grey">Resume:</h3> 
+    <a id="buttons" href="resumePDF.pdf" download>
       <button class = "downloadablePDF"type="submit">Download Here</button>
      </a>
 </body>
@@ -99,7 +100,7 @@
     </blockquote>
 
     <!--FORM-->
-  <div class="container">
+  <div class="container" onsubmit="myfunc(event)">
     <form >
       <label class="contactInfoLabel">Your Name</label>
       <input type="text" id="fullname" name="fullname" placeholder="First and last name...">
@@ -120,33 +121,7 @@
 </div>
    <!--END OF FORM-->
 
-<script>
-	
-	function checkInputs()
-	{
-		var fullname = document.getElementById("fullname").value; //fname is the ID
-		var email = document.getElementById("email").value;
-		var subject = document.getElementById("subject").value;
-		
-		if(fullname == "") //if first and last name are not provided by client display a message
-			document.getElementById("lastMessage").innerHTML = 
-			"Please enter your name!";
-		else if(email == "") //if phone number not valid display a message
-			document.getElementById("lastMessage").innerHTML = 
-			"Please enter your email!";
-		else if (subject == "") //if appointment date not selected display a message
-			document.getElementById("lastMessage").innerHTML = 
-			"Please enter your message!"
-		else if (fullname != "" && email != ""  && subject != "")
-			document.getElementById("lastMessage").innerHTML = 
-			"We'll be in touch soon!";
-	}
-  const fs = require('fs');
-
-fs.appendFile('Output.txt', 'fullname', function (err) {
-  if (err) throw err;
-});
-</script>
+<script src="myscripts.js"></script>
 
 <!-- Footer -->
 <footer class="w3-container  w3-center w3-opacity w3-xlarge">
