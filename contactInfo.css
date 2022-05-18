@@ -65,21 +65,6 @@ input[type=text], select, textarea {
     margin-bottom: 30px;
     margin-top: 10px;
   }
-  
-  input[type=submit] {
-    color: gray;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 15px;
-    margin-bottom: 10px;
-  }
-  
-  input[type=submit]:hover {
-    background-color: gray;
-    color: white;
-  }
 
   #subject{
     margin-top: 10px;
@@ -104,3 +89,24 @@ input[type=text], select, textarea {
     font-family: 'Mulish', sans-serif;
     font-size: 17px;
   }
+
+  #submitButton{
+    font-family: 'Mulish', sans-serif;
+    font-size: 17px;
+    padding: 10px;
+    width: 90px;
+  }
+  #submitButton:hover{
+    background-color: gray;
+    color: white;
+  }
+
+  #lastMessage{
+    font-family: 'Mulish', sans-serif;
+    font-size: 17px;
+    width: 90px;
+    color: white;
+    margin-left: 10px;
+  }
+
+  
