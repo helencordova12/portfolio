@@ -100,17 +100,18 @@
 
     <!--FORM-->
   <div class="container">
-    <form action="connect.php" method="post">
-      <label class="contactInfoLabel"for="fname">Your Name</label>
+    <form >
+      <label class="contactInfoLabel">Your Name</label>
       <input type="text" id="fullname" name="fullname" placeholder="First and last name...">
   
-      <label class="contactInfoLabel" for="lname">Email</label>
+      <label class="contactInfoLabel">Email</label>
       <input type="text" id="email" name="email" placeholder="Email...">
   
-      <label class="contactInfoLabel"for="subject">Message</label>
+      <label class="contactInfoLabel">Message</label>
       <input type="text" id="subject" name="subject" placeholder="Write something...">
   
-      <input type="submit" value="Submit">
+      <input id="submitButton"type="button" value="Submit" onclick="checkInputs()">
+      <span id="lastMessage"></span>
     </form>
   </div>
   <blockquote id="bottomText">
@@ -118,6 +119,34 @@
 </blockquote>
 </div>
    <!--END OF FORM-->
+
+<script>
+	
+	function checkInputs()
+	{
+		var fullname = document.getElementById("fullname").value; //fname is the ID
+		var email = document.getElementById("email").value;
+		var subject = document.getElementById("subject").value;
+		
+		if(fullname == "") //if first and last name are not provided by client display a message
+			document.getElementById("lastMessage").innerHTML = 
+			"Please enter your name!";
+		else if(email == "") //if phone number not valid display a message
+			document.getElementById("lastMessage").innerHTML = 
+			"Please enter your email!";
+		else if (subject == "") //if appointment date not selected display a message
+			document.getElementById("lastMessage").innerHTML = 
+			"Please enter your message!"
+		else if (fullname != "" && email != ""  && subject != "")
+			document.getElementById("lastMessage").innerHTML = 
+			"We'll be in touch soon!";
+	}
+  const fs = require('fs');
+
+fs.appendFile('Output.txt', 'data to append', function (err) {
+  if (err) throw err;
+});
+</script>
 
 <!-- Footer -->
 <footer class="w3-container  w3-center w3-opacity w3-xlarge">
